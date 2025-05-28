@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - De Gouden Korst</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" role="banner"><a href="index.html">De Gouden Korst</a></div>
+            <ul role="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assortiment.html">Ons Assortiment</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <article class="contact">
+            <h1>Neem Contact Op</h1>
+            <div class="contact-container">
+                <aside class="contact-info">
+                    <h2>Contactgegevens</h2>
+                    <address>
+                        <p><strong>Adres:</strong> Bakkerstraat 123</p>
+                        <p><strong>Postcode:</strong> 1234 AB</p>
+                        <p><strong>Plaats:</strong> Amsterdam</p>
+                        <p><strong>Telefoon:</strong> <a href="tel:020-1234567">020-1234567</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@degoudenkorst.nl">info@degoudenkorst.nl</a></p>
+                    </address>
+                </aside>
+
+                <form id="contactForm" class="contact-form" aria-label="Contact formulier">
+                    <div class="form-group">
+                        <label for="name">Naam:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mailadres:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Bericht:</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Verstuur Bericht</button>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 De Gouden Korst - Alle rechten voorbehouden</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
